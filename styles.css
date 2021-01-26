@@ -1,3 +1,15 @@
 body {
     background-image: url('https://i.imgur.com/E8tdtJV.jpg');
 }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  h2 {
+      color: white;
+  }
