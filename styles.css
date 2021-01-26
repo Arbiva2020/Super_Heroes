@@ -1,3 +1,37 @@
 body {
     background-image: url('https://i.imgur.com/E8tdtJV.jpg');
 }
+
+.card {
+    background-color: gray;
+    line-height: 200%;
+    opacity: 0.7;
+   
+}
+
+h1 {
+    color:honeydew;
+    line-height: 200%;
+}
+
+#butt {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.row {
+    line-height: 200%;
+    vertical-align: middle;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+ }
