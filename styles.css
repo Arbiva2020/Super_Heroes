@@ -35,3 +35,11 @@ h1 {
     color: white;
     text-align: center;
  }
+
+ #next {
+    margin: 40px;
+ }
+
+ #add {
+    margin: 40px; 
+ }

@@ -1,22 +1,26 @@
-let Btn = document.querySelector('#next'),
-    imgDiv = document.querySelector("#photoholder"),
-    img = document.querySelector("#imgAddress");
-let startIndex = 0;
+const nextBtn = document.querySelector('#next'),
+      addBtn = document.querySelector('#add'),
+      imgDiv = document.querySelector("#photoholder"),
+      img = document.querySelector("#imgAddress");
+const startIndex = 0;
 
-class Hero {
-    constructor(name, powers, img) {
-        if (typeof name === 'string') this.name = name; else return;
-        if (typeof powers === 'arr') this.powers = powers; else return; 
-        if (typeof img === 'img') this.img = img; else return;
-    }   
+window.onload = function() {
+    addBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        addNewHero();
+    })
 }
+
+function addNewHero(){
+    location.herf = "index2.html";
+}
+
 
 class Hero {
     constructor(name, powers, img) {
         this.name = name;
         this.powers = powers;
         this.img = img;
-
     }   
 }
 
@@ -35,7 +39,7 @@ function updateHedroesCard() {
     for(const hero of heroes) {
         heroCard.innerHTML += `<card>
         <div scope="card">${hero.name}</div>
-        <div>${hero.powers[]}</div>
+        <div>${hero.powers['${value}']}</div>
         <div>${hero.img}</div>
       </card>`;
     }
