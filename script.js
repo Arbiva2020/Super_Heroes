@@ -1,3 +1,16 @@
+
+const showListBtn = document.querySelector("#showList");
+
+window.onload = function () {
+    showListBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        goToListPage();
+    })
+}
+
+function goToListPage(){
+    location.href = 'index1.html';
+
 const nextBtn = document.querySelector('#next'),
       addBtn = document.querySelector('#add'),
       imgDiv = document.querySelector("#photoholder"),
@@ -43,4 +56,5 @@ function updateHedroesCard() {
         <div>${hero.img}</div>
       </card>`;
     }
+
 }
