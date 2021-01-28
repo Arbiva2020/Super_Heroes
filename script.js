@@ -1,3 +1,16 @@
+
+const showListBtn = document.querySelector("#showList");
+
+window.onload = function () {
+    showListBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        goToListPage();
+    })
+}
+
+function goToListPage(){
+    location.href = 'index1.html';
+
 const nextBtn = document.querySelector('#next'),
       addBtn = document.querySelector('#add'),
       heroCardtext = document.querySelector(".card-text"),
@@ -21,10 +34,10 @@ const heroes = [
     new Hero('Batman',['advancedTechnologies', 'Armor'], 'https://reel360.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-29-at-8.22.27-AM.jpg'),
     new Hero('Spiderman',['WebMaking', 'Jumping'], "https://cdn.vox-cdn.com/thumbor/K5IUSjv1ArPfjh_IZUp4DPsoZMY=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22024938/marvels_spiderman_remastered_screenshot_01_disclaimer_en_01oct20.png"),
 ];
-let currentHeroes = localStorage.getItem('currentHeroes')
-currentHeroes = JSON.parse(currentHeroes)
-let stringArray = JSON.stringify(heroes) //only than the storage gets the data - complex data requires stringify
-localStorage.setItem('currentHeroes', stringArray)
+// let currentHeroes = localStorage.getItem('currentHeroes')
+// currentHeroes = JSON.parse(currentHeroes)
+// let stringArray = JSON.stringify(heroes) //only than the storage gets the data - complex data requires stringify
+// localStorage.setItem('currentHeroes', stringArray)
 
 function insertHeroesToDisplay(event) {
     let counter = 0;
@@ -70,3 +83,4 @@ function addNewHero(){
 // let newHerosString = localStorage.getItem('Heros');
 
 // let heros = JSON.parse(newHerosString);
+}
